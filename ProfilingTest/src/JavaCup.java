@@ -23,10 +23,13 @@ public class JavaCup {
         else { System.out.println("NO"); }
     }
     public static void temp() {
-        ArrayList a = new ArrayList();
-        for (int i = 0; i < 10000; i++)
+        int size1 = 10000;
+        int size2 = 2000;
+        ArrayList<Integer> a = new ArrayList<>();
+        a.ensureCapacity(size1 * size2);
+        for (int i = 0; i < size1; i++)
         {
-            for (int j = 0; j < 20000; j++) {
+            for (int j = 0; j < size2; j++) {
                 a.add(i + j);
             }
         }
