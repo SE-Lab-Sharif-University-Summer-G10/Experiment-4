@@ -22,6 +22,17 @@ public class JavaCup {
         }
         else { System.out.println("NO"); }
     }
+
+//    public static void temp() {
+//        ArrayList a = new ArrayList();
+//        for (int i = 0; i < 10000; i++)
+//        {
+//            for (int j = 0; j < 2000; j++) {
+//                a.add(i + j);
+//            }
+//        }
+//    }
+//
     public static void temp() {
         int size1 = 10000;
         int size2 = 2000;
