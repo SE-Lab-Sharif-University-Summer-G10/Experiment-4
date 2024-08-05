@@ -12,6 +12,6 @@ Feature: Calculator
     Then I expect the result <result>
     Examples:
       | first | second | result |
-      | 13    | 12     | 1      |
-      | 5     | 6      | 1-     |
-      | 4     | 2      | 2      |
+      |  1    | 12     | 13     |
+      |  5    | 6      | 1-     |
+      |  2    | 2      | 4      |
