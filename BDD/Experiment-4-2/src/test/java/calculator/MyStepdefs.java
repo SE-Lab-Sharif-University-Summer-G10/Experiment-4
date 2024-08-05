@@ -17,7 +17,7 @@ public class MyStepdefs {
         calculator = new Calculator();
     }
 
-    @Given("^Two input values, (\\d+) and (\\d+)$")
+    @Given("^Two input values, (-?\\d+) and (-?\\d+)$")
     public void twoInputValuesAnd(int arg0, int arg1) {
         value1 = arg0;
         value2 = arg1;
@@ -32,5 +32,12 @@ public class MyStepdefs {
     @Then("^I expect the result (\\d+)$")
     public void iExpectTheResult(int arg0) {
         Assert.assertEquals(arg0, result);
+    }
+
+    @When("^I calculate the result of square root of division of two numbers$")
+    public void iCalculateTheResultOfSquareRootOfDivisionOfTwoNumbers() {
+        result = calculator.division(value1, value2);
+        result = calculator.squareRoot(result);
+        System.out.print(result);
     }
 }
